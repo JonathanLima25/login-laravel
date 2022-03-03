@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class ModelBook extends Model
 {
-    protected $table='person';
+    use HasFactory;
 }

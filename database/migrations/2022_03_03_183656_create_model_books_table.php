@@ -33,3 +33,4 @@ class CreateModelBooksTable extends Migration
         Schema::dropIfExists('person');
     }
 }
+
