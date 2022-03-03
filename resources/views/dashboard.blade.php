@@ -10,7 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
                     @can('user')
-                        Dados de usuário
+                        <h1 class="text-center">Dados de usuário</h1>
                     @elsecan('admin')
                         Somente o administrador!
                     @endcan
