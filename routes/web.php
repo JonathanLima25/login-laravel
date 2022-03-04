@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PersonController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,4 +18,6 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::get('/pessoa', [PersonController::class, 'create']);
+Route::post('/pessoa', [PersonController::class, 'store'])->name('registrar_pessoa');
 require __DIR__.'/auth.php';
